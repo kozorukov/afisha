@@ -5,4 +5,4 @@ spring:
     url: jdbc:postgresql://localhost:32778/afisha
     username: afisha
     password: 12345678
-token: 5907837738:AAGS1iMkbdxjdsVpecQ-zGNgYC_MzQM_4JY
+token:
