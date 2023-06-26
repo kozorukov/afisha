@@ -29,13 +29,13 @@ public class DataInitializer {
                 Event.builder()
                         .name("День Рождения")
                         .description("Описание моего дня рождения")
-                        .maxCountParticipants(5)
+                        .maxParticipantsCount(5)
                         .dateTime(LocalDateTime.of(2023, 6, 29, 10, 0))
                         .build(),
                 Event.builder()
                         .name("Собеседование")
                         .description("Собеседование в команду Java-разработки")
-                        .maxCountParticipants(1)
+                        .maxParticipantsCount(1)
                         .dateTime(LocalDateTime.of(2023, 7, 1, 10, 0))
                         .build()
         );

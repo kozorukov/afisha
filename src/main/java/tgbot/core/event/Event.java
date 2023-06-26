@@ -27,5 +27,5 @@ public class Event extends JpaEntity {
     private LocalDateTime dateTime;
 
     @Positive
-    private Integer maxCountParticipants;
+    private Integer maxParticipantsCount;
 }

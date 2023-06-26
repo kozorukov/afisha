@@ -1,13 +1,5 @@
 version: '3'
 services:
-  main:
-    build: .
-    restart: always
-    environment:
-      PROFILE:
-      POSTGRES_PASSWORD:
-    ports:
-      - 127.0.0.1:${MAIN_PORT:-0}:8080
   postgres:
     image: postgres:15
     restart: always

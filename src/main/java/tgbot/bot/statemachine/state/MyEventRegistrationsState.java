@@ -7,6 +7,7 @@ import tgbot.bot.statemachine.Callback;
 import tgbot.bot.statemachine.Services;
 import tgbot.bot.statemachine.State;
 import tgbot.core.registration.Registration;
+import tgbot.core.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class MyEventRegistrationsState implements State {
 
     @Override
     public List<Button> getButtons() {
-        var user = services.getUserService().get(userId);
+        User user = services.getUserService().get(userId);
         List<Registration> registrations = services.getRegistrationService().getByUser(user);
         List<Button> buttons = new ArrayList<>();
         for (Registration registration : registrations) {
